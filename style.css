@@ -1,0 +1,172 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: #000000;
+    color: white;
+    padding: 0.5rem 1rem; /* Reduce el padding para agrupar más los elementos */
+    position: fixed; /* Posición fija en la parte superior */
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: center; /* Centrar los elementos */
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    margin-right: 2rem; /* Espacio reducido entre el logo y los elementos de navegación */
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centrar los elementos */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0051ff;
+}
+
+/* Main styles */
+main {
+    flex: 1;
+    padding: 0.5rem 0;
+    padding-top: 3rem; /* Ajustar el relleno superior para que el contenido no se superponga con el encabezado fijo */
+}
+
+.hero-section {
+    background: #f4f4f4;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.info-section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2rem;
+}
+
+.info-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.service {
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    margin: 0 1rem;
+    background: #f4f4f4;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.service i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.service h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.service p {
+    font-size: 1rem;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+/* Footer styles */
+footer {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+footer p {
+    margin: 0;
+}
+
+.contact-section {
+    padding: 2rem;
+}
+
+/* Estilos para la sección "Sobre Nosotros" */
+.info-section {
+    max-width: 800px;
+    margin: auto;
+    padding: 2rem;
+    text-align: justify;
+}
+
+.about-content {
+    line-height: 1.6;
+    font-size: 1.1rem;
+}
+
+.about-content p {
+    margin-bottom: 1.5rem;
+}
+
+.about-content strong {
+    font-weight: bold;
+}
+
+.about-content ul {
+    list-style: none; /* Eliminar los puntos de viñeta */
+    padding-left: 0; /* Eliminar el relleno izquierdo predeterminado */
+}
+
+.about-content ul li {
+    margin-bottom: 0.5rem; /* Espacio entre los elementos de la lista */
+}
